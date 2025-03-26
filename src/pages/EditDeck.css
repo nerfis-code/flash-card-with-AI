@@ -1,0 +1,29 @@
+.edit-deck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    gap: 18px;
+}
+
+.edit-deck>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .7em;
+    width: 96vw;
+    max-width: 500px;
+}
+
+.edit-deck>div>input {
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.3em;
+    border-color: transparent;
+    width: 60%;
+}
+
+.edit-deck>div>button:hover {
+    background-color: red;
+    opacity: .7;
+    border-color: transparent;
+}

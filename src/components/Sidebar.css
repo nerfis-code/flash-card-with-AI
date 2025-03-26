@@ -1,0 +1,32 @@
+aside {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    min-height: 90vh;
+    max-width: 12em;
+    margin-left: auto;
+
+}
+
+.sidebar {
+    min-height: 18em;
+    background-color: black;
+    padding: 18px 12px;
+    border-radius: 12px;
+
+}
+
+.sidebar>button {
+    bottom: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 8em;
+    border: 1px solid white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin-top: .5em;
+}

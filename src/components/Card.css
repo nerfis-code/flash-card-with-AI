@@ -1,0 +1,29 @@
+.card {}
+
+.card-form {
+
+    margin-top: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+textarea {
+    resize: none;
+    background-color: transparent;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.review-card {
+    min-height: 84vh;
+    margin-top: 43px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}

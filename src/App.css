@@ -1,0 +1,74 @@
+main {}
+
+.main-body {
+    display: flex;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.deck-name {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 3em;
+
+    &>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 12px;
+        padding: 4px 18px;
+        gap: 24px;
+        height: 2em;
+    }
+}
+
+.notification {
+    animation-name: slide-down-up;
+    animation-duration: 3.5s;
+    border-radius: 12px;
+    padding: 6px 12px;
+    max-width: 30vw;
+    word-wrap: break-word;
+    display: block;
+    position: absolute;
+    right: 0;
+
+    opacity: 0;
+    transform: translateY(-100px);
+
+}
+
+@keyframes slide-down-up {
+    0% {
+        opacity: 1;
+    }
+
+    15% {
+        transform: translateY(10px);
+    }
+
+    20% {
+        transform: translateY(0px);
+    }
+
+    90% {
+        transform: translateY(0px);
+    }
+
+    99% {
+        transform: translateY(-90px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
